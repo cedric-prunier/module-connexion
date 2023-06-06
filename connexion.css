@@ -1,0 +1,185 @@
+@font-face {
+        font-family: "poppins";
+        src: url(./poppins/Poppins-Bold.ttf);
+}
+
+* {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+}
+body {
+        font-family: "poppins";
+}
+
+header {
+        background-image: url(./images/background.jpg);
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+}
+
+/* Formulaire login */
+.logo {
+        width: 30%;
+}
+.login {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: #181c1f84;
+        width: 60%;
+        height: 80%;
+        top: 50%;
+        left: 50%;
+        padding: 40px;
+        backdrop-filter: blur(3px);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        border-radius: 15px;
+        font-size: 1.5rem;
+}
+.login label {
+        font-size: 2rem;
+}
+.login h1 {
+        color: #fff;
+        font-size: 1.5rem;
+}
+
+.login input[type="text"] {
+        display: block;
+        margin: 20px auto;
+        outline: none;
+        background: none;
+        border-color: transparent;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 5px 5px;
+        width: 80%;
+        border-bottom: 3px solid rgb(255, 255, 255);
+        font-size: 1rem;
+}
+.login input[type="password"] {
+        display: block;
+        margin: 20px auto;
+        outline: none;
+        background: none;
+        border-color: transparent;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 5px 5px;
+        width: 80%;
+        border-bottom: 3px solid rgb(255, 255, 255);
+        font-size: 1rem;
+}
+
+.login ::placeholder {
+        color: rgb(255, 255, 255);
+        font-size: 0.9rem;
+}
+
+.login input[type="submit"],
+.login input[type="reset"] {
+        background: none;
+        color: white;
+        padding: 10px 30px;
+        border-radius: 150px;
+        border: 3px solid #fff;
+        margin: 5px;
+        transition: 0.5s;
+}
+.login input[type="submit"]:hover,
+.login input[type="reset"]:hover {
+        background: linear-gradient(to right, rgb(11, 93, 128), rgb(255, 255, 255));
+        transform: scale(1.1);
+}
+
+.login label,
+.login a {
+        font-size: 1rem;
+        color: #fff;
+}
+.login .identifiant img {
+        height: 15px;
+        width: 15px;
+}
+
+.login .input-text {
+        position: relative;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+}
+
+.login .input-password {
+        position: relative;
+        display: flex;
+        align-items: center;
+}
+
+.close-login {
+        background-color: transparent;
+        border: 0;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+}
+
+.login .eye {
+        background-color: transparent;
+        border: none;
+        height: 15px;
+        padding: 0 10px;
+        filter: invert(100%);
+}
+.login .identifiant {
+        display: flex;
+        flex-direction: column;
+}
+.input-text p {
+        font-size: 15px;
+        padding: 5px;
+}
+
+@media screen and (max-width: 960px) {
+        .login {
+                width: 80%;
+
+                justify-content: space-evenly;
+        }
+        .login h1 {
+                font-size: 1.3rem;
+        }
+        .login .remember {
+                font-size: 0.8rem;
+        }
+        .login a {
+                font-size: 0.8rem;
+        }
+        .login input {
+                font-size: 0.9rem;
+        }
+        .login input[type="text"],
+        .login input[type="password"] {
+                width: 100%;
+        }
+}
+@media screen and (max-height: 600px) {
+        .login {
+                width: 80%;
+                height: 100%;
+        }
+        .login h1 {
+                font-size: 1rem;
+        }
+        .login .remember {
+                font-size: 0.8rem;
+        }
+        .login a {
+                font-size: 0.8rem;
+        }
+}
