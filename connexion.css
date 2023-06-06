@@ -47,7 +47,7 @@ header {
 }
 .login h1 {
         color: #fff;
-        font-size: 1.5rem;
+        font-size: 3rem;
 }
 
 .login input[type="text"] {
@@ -61,7 +61,7 @@ header {
         padding: 5px 5px;
         width: 80%;
         border-bottom: 3px solid rgb(255, 255, 255);
-        font-size: 1rem;
+        font-size: 2rem;
 }
 .login input[type="password"] {
         display: block;
@@ -74,7 +74,7 @@ header {
         padding: 5px 5px;
         width: 80%;
         border-bottom: 3px solid rgb(255, 255, 255);
-        font-size: 1rem;
+        font-size: 2rem;
 }
 
 .login ::placeholder {

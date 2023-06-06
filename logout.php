@@ -21,15 +21,18 @@ if (isset($_POST['logout'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Déconnexion</title>
+    <link rel="stylesheet" href="logout.css">
 </head>
 
 <body>
-    <h1>Déconnexion</h1>
-    <p>Êtes-vous sûr de vouloir fermer votre session ?</p>
-    <form action="logout.php" method="post">
-        <input type="submit" name="logout" value="Déconnexion">
-        <button type="button" onclick="window.history.back();">Annuler</button>
-    </form>
+    <div>
+        <h1>Déconnexion</h1>
+        <p>Êtes-vous sûr de vouloir fermer votre session ?</p>
+        <form action="logout.php" method="post">
+            <input type="submit" name="logout" value="Déconnexion">
+            <button type="button" onclick="window.history.back();">Annuler</button>
+        </form>
+    </div>
 </body>
 
 </html>

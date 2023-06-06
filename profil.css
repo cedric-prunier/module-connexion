@@ -83,6 +83,7 @@ input {
         padding: 10px 20px;
         border: 2px solid white;
         border-radius: 150px;
+        transition: 0.5s;
 }
 
 .options input {
@@ -96,6 +97,10 @@ input {
         font-size: 2rem;
 }
 .options input:hover {
+        background: linear-gradient(to right, rgb(11, 93, 128), rgb(255, 255, 255));
+        transform: scale(1.1);
+}
+.options a:hover {
         background: linear-gradient(to right, rgb(11, 93, 128), rgb(255, 255, 255));
         transform: scale(1.1);
 }
