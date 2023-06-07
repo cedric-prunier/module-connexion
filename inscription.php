@@ -15,6 +15,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 exit;
         }
 
+        // Encoder le mot de passe
+        $hashed_password = password_hash($form_password, PASSWORD_DEFAULT);
+
         // Connexion à la base de données
         $servername = "localhost"; // Remplacez par l'adresse de votre serveur de base de données
         $username = "root"; // Remplacez par votre nom d'utilisateur de la base de données
@@ -37,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         // Préparer et exécuter la requête d'insertion
-        $sql = "INSERT INTO utilisateurs (nom, prenom, login, password) VALUES ('$nom', '$prenom', '$login', '$form_password')";
+        $sql = "INSERT INTO utilisateurs (nom, prenom, login, password) VALUES ('$nom', '$prenom', '$login', '$hashed_password')";
 
         if ($conn->query($sql) === TRUE) {
                 echo "Les données ont été ajoutées avec succès à la base de données.";
@@ -52,6 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Fermer la connexion à la base de données
         $conn->close();
 }
+
 ?>
 
 <!DOCTYPE html>
