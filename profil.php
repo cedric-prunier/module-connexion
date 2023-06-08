@@ -78,39 +78,42 @@ $conn->close();
 <body>
     <section>
         <form class="formulaire" action="profil.php" method="post">
-            <ul>
-                <img src="./images/logo_laplateforme.png" alt="logo laplateforme" />
+
+            <img src="./images/logo_laplateforme.png" alt="logo laplateforme" />
+            <br />
+
+            <h1>Modifier votre profil</h1>
+
+            <br />
+
+            <label for="login">Login</label>
+            <br>
+            <input type="text" id="login" name="login" value="<?php echo $login; ?>" required>
+
+            <br />
+
+            <label for="prenom">Prénom</label>
+            <br>
+            <input type="text" id="prenom" name="prenom" value="<?php echo $prenom; ?>" required>
+
+            <br>
+
+            <label for="nom">Nom</label>
+            <br>
+            <input type="text" id="nom" name="nom" value="<?php echo $nom; ?>" required>
+
+            <br />
+
+            <label for="password">Mot de passe</label>
+            <br>
+            <input type="password" id="password" name="password" value="<?php echo $password; ?>" required>
+
+            <br />
+            <li class="options">
+                <input type="submit" name="valider" value="Valider &#10004;" />
                 <br />
-                <li>
-                    <h1>Modifier votre profil</h1>
-                </li>
-                <br />
-                <li>
-                    <label for="login">Login</label>
-                    <input type="text" id="login" name="login" value="<?php echo $login; ?>" required>
-                </li>
-                <br />
-                <li>
-                    <label for="prenom">Prénom:</label>
-                    <input type="text" id="prenom" name="prenom" value="<?php echo $prenom; ?>" required>
-                </li>
-                <br>
-                <li>
-                    <label for="nom">Nom:</label>
-                    <input type="text" id="nom" name="nom" value="<?php echo $nom; ?>" required>
-                </li>
-                <br />
-                <li>
-                    <label for="password">Mot de passe</label>
-                    <input type="password" id="password" name="password" value="<?php echo $password; ?>" required>
-                </li>
-                <br />
-                <li class="options">
-                    <input type="submit" name="valider" value="Valider &#10004;" />
-                    <a href="index.php">Retour à l'accueil</a>
-                    <br />
-                </li>
-            </ul>
+            </li>
+
         </form>
     </section>
 </body>
