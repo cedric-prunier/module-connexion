@@ -75,7 +75,7 @@ $conn->close();
                         <label class="remember" for="remember" id="remember">Se souvenir de moi</label><br />
                 </div>
 
-                <a href="#">Mot de passe oublié ?</a>
+                <a href="new_mdp.php">Mot de passe oublié ?</a>
 
                 <a href="./inscription.php"> Créer un compte </a>
 
