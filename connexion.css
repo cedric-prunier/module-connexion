@@ -145,11 +145,12 @@ header {
                 width: 100%;
         }
 }
-@media screen and (max-height: 600px) {
+@media screen and (max-width: 600px) {
         .login {
-                width: 80%;
-                height: 100%;
+                width: 100%;
         }
+}
+@media screen and (max-height: 600px) {
         .login h1 {
                 font-size: 1rem;
         }
