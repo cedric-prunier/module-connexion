@@ -93,8 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <br>
                         <label for="password_check">Confirmer MDP</label>
                         <br>
-                        <input type="password" id="password_check" name="password_check"
-                                placeholder="Entrez à nouveau votre MDP" />
+                        <input type="password" id="password_check" name="password_check" placeholder="Confirmer MDP" />
                         <br>
                         <li class="options">
                                 <input type="submit" name="valider" value="Valider &#10004;" />
