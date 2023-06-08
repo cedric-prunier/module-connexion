@@ -25,13 +25,11 @@ section {
         justify-content: center;
 }
 h1 {
-        font-size: 1.3rem;
+        font-size: 3rem;
+        text-align: center;
+        width: 100%;
 }
-img {
-        z-index: 1;
-        position: absolute;
-        left: 100;
-}
+
 .formulaire {
         position: absolute;
         background: #181c1f84;
@@ -42,11 +40,12 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 20px;
+        text-align: center;
 }
 
 .formulaire img {
-        width: 120px;
-        height: 20px;
+        width: 60%;
         display: block;
         margin: auto;
 }
@@ -68,10 +67,12 @@ input {
         color: black;
         margin: 0 30px;
 }
-
+label {
+        font-size: 1.5rem;
+}
 .formulaire .options {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
 }
 .options input {
         background: none;
@@ -86,7 +87,7 @@ input {
         background: linear-gradient(to right, rgb(11, 93, 128), rgb(255, 255, 255));
         transform: scale(1.1);
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
         form {
                 display: flex;
         }
@@ -99,6 +100,7 @@ input {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                padding: 20px;
         }
 
         .formulaire ul li {
@@ -106,6 +108,6 @@ input {
         }
         .formulaire .options {
                 display: flex;
-                justify-content: space-around;
+                justify-content: center;
         }
 }

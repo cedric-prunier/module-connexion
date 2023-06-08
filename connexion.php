@@ -69,17 +69,12 @@ $conn->close();
                         <button class="eye" type="button" onclick="togglePassword()" id="toggle-password"><img
                                         src="./images/eye-open.svg" alt="" /></button>
                 </div>
-
-                <div>
-                        <input type="checkbox" name="remember" id="remember" />
-                        <label class="remember" for="remember" id="remember">Se souvenir de moi</label><br />
-                </div>
-
+                <br>
                 <a href="new_mdp.php">Mot de passe oublié ?</a>
-
+                <br>
                 <a href="./inscription.php"> Créer un compte </a>
-
-                <div>
+                <br>
+                <div class="options">
                         <input type="submit" name="valider" value="Valider" />
                         <input type="reset" name="reset" value="Effacer" />
                 </div>

@@ -50,7 +50,7 @@ header {
         font-size: 3rem;
 }
 
-.login input[type="text"] {
+.login input {
         display: block;
         margin: 20px auto;
         outline: none;
@@ -62,24 +62,6 @@ header {
         width: 80%;
         border-bottom: 3px solid rgb(255, 255, 255);
         font-size: 2rem;
-}
-.login input[type="password"] {
-        display: block;
-        margin: 20px auto;
-        outline: none;
-        background: none;
-        border-color: transparent;
-        color: rgb(255, 255, 255);
-        text-align: center;
-        padding: 5px 5px;
-        width: 80%;
-        border-bottom: 3px solid rgb(255, 255, 255);
-        font-size: 2rem;
-}
-
-.login ::placeholder {
-        color: rgb(255, 255, 255);
-        font-size: 0.9rem;
 }
 
 .login input[type="submit"],
@@ -89,7 +71,7 @@ header {
         padding: 10px 30px;
         border-radius: 150px;
         border: 3px solid #fff;
-        margin: 5px;
+        margin: 15px;
         transition: 0.5s;
 }
 .login input[type="submit"]:hover,
@@ -97,10 +79,13 @@ header {
         background: linear-gradient(to right, rgb(11, 93, 128), rgb(255, 255, 255));
         transform: scale(1.1);
 }
+.options {
+        display: flex;
+        justify-content: center;
+}
 
-.login label,
 .login a {
-        font-size: 1rem;
+        font-size: 2rem;
         color: #fff;
 }
 .login .identifiant img {
@@ -154,15 +139,7 @@ header {
         .login h1 {
                 font-size: 1.3rem;
         }
-        .login .remember {
-                font-size: 0.8rem;
-        }
-        .login a {
-                font-size: 0.8rem;
-        }
-        .login input {
-                font-size: 0.9rem;
-        }
+
         .login input[type="text"],
         .login input[type="password"] {
                 width: 100%;
@@ -175,11 +152,5 @@ header {
         }
         .login h1 {
                 font-size: 1rem;
-        }
-        .login .remember {
-                font-size: 0.8rem;
-        }
-        .login a {
-                font-size: 0.8rem;
         }
 }

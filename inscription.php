@@ -15,9 +15,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 exit;
         }
 
-        // Encoder le mot de passe
-        $hashed_password = password_hash($form_password, PASSWORD_DEFAULT);
-
         // Connexion à la base de données
         $servername = "localhost"; // Remplacez par l'adresse de votre serveur de base de données
         $username = "root"; // Remplacez par votre nom d'utilisateur de la base de données
@@ -40,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         // Préparer et exécuter la requête d'insertion
-        $sql = "INSERT INTO utilisateurs (nom, prenom, login, password) VALUES ('$nom', '$prenom', '$login', '$hashed_password')";
+        $sql = "INSERT INTO utilisateurs (nom, prenom, login, password) VALUES ('$nom', '$prenom', '$login', '$form_password')";
 
         if ($conn->query($sql) === TRUE) {
                 echo "Les données ont été ajoutées avec succès à la base de données.";
@@ -55,8 +52,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Fermer la connexion à la base de données
         $conn->close();
 }
-
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -80,6 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         <h1>Formulaire d'inscription</h1>
                                 </li>
                                 <br />
+
                                 <li>
                                         <label for="nom">Nom</label>
                                         <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" />
@@ -108,6 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         <input type="password" id="password_check" name="password_check"
                                                 placeholder="Entrez à nouveau votre MDP" />
                                 </li>
+
                                 <br />
                                 <li class="options">
                                         <input type="submit" name="valider" value="Valider &#10004;" />
