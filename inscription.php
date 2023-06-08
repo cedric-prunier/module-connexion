@@ -70,50 +70,38 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
         <section>
                 <form class="formulaire" action="inscription.php" method="post">
-                        <ul>
-                                <img src="./images/logo_laplateforme.png" alt="logo laplateforme" />
-                                <br />
-                                <li>
-                                        <h1>Formulaire d'inscription</h1>
-                                </li>
-                                <br />
 
-                                <li>
-                                        <label for="nom">Nom</label>
-                                        <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" />
-                                </li>
+                        <img height="30" src="./images/logo_laplateforme.png" alt="logo laplateforme" />
+                        <br>
+                        <h1>Formulaire d'inscription</h1>
+                        <br>
+                        <label for="nom">Nom</label>
+                        <br>
+                        <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" />
+                        <br>
+                        <label for="prenom">Prénom</label>
+                        <br>
+                        <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" />
+                        <br>
+                        <label for="login">Identifiant</label>
+                        <br>
+                        <input type="text" id="login" name="login" placeholder="Entrez votre identifiant" />
+                        <br>
+                        <label for="password">Mot de passe</label>
+                        <br>
+                        <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe" />
+                        <br>
+                        <label for="password_check">Confirmer MDP</label>
+                        <br>
+                        <input type="password" id="password_check" name="password_check"
+                                placeholder="Entrez à nouveau votre MDP" />
+                        <br>
+                        <li class="options">
+                                <input type="submit" name="valider" value="Valider &#10004;" />
                                 <br />
-                                <li>
-                                        <label for="prenom">Prénom</label>
-                                        <input type="text" id="prenom" name="prenom"
-                                                placeholder="Entrez votre prénom" />
-                                </li>
-                                <br />
-                                <li>
-                                        <label for="login">Identifiant</label>
-                                        <input type="text" id="login" name="login"
-                                                placeholder="Entrez votre identifiant" />
-                                </li>
-                                <br />
-                                <li class="password">
-                                        <label for="password">Mot de passe</label>
-                                        <input type="password" id="password" name="password"
-                                                placeholder="Entrez votre mot de passe" />
-                                </li>
-                                <br />
-                                <li class="password_check">
-                                        <label for="password_check">Confirmer MDP</label>
-                                        <input type="password" id="password_check" name="password_check"
-                                                placeholder="Entrez à nouveau votre MDP" />
-                                </li>
+                                <input type="reset" name="reset" value="Effacer &#10005;" />
+                        </li>
 
-                                <br />
-                                <li class="options">
-                                        <input type="submit" name="valider" value="Valider &#10004;" />
-                                        <br />
-                                        <input type="reset" name="reset" value="Effacer &#10005;" />
-                                </li>
-                        </ul>
                 </form>
         </section>
 </body>
