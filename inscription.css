@@ -75,6 +75,9 @@ label {
         background: linear-gradient(to right, rgb(11, 93, 128), rgb(255, 255, 255));
         transform: scale(1.1);
 }
+::placeholder {
+        text-align: center;
+}
 @media screen and (max-width: 800px) {
         form {
                 display: flex;
