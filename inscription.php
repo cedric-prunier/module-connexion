@@ -77,23 +77,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <br>
                         <label for="nom">Nom</label>
                         <br>
-                        <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" />
+                        <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required />
                         <br>
                         <label for="prenom">Prénom</label>
                         <br>
-                        <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" />
+                        <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required />
                         <br>
                         <label for="login">Identifiant</label>
                         <br>
-                        <input type="text" id="login" name="login" placeholder="Entrez votre identifiant" />
+                        <input type="text" id="login" name="login" placeholder="Entrez votre identifiant" required />
                         <br>
                         <label for="password">Mot de passe</label>
                         <br>
-                        <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe" />
+                        <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe"
+                                required />
                         <br>
                         <label for="password_check">Confirmer MDP</label>
                         <br>
-                        <input type="password" id="password_check" name="password_check" placeholder="Confirmer MDP" />
+                        <input type="password" id="password_check" name="password_check" placeholder="Confirmer MDP"
+                                required />
                         <br>
                         <li class="options">
                                 <input type="submit" name="valider" value="Valider &#10004;" />
