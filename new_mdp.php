@@ -22,7 +22,7 @@
             <br>
             <input type="text" name="login" placeholder="Entrez votre login">
             <br>
-            <input class="options" type="submit" name="submit_request" value="Réinitialiser le mot de passe">
+            <input class="options" type="submit" name="submit_request" value="Vérifier profil utilisateur">
 
 
             <?php
